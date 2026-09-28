@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 40px 20px;
+}
+
+/* Contenedor centrado */
+.pagina {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+/* Cada bloque: etiqueta + campo */
+.grupo {
+  margin-bottom: 40px;
+}
+
+.grupo label.titulo {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ---------- Espesor (30cm / 20cm) ---------- */
+.espesores {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+/* Ocultamos el radio real y estilizamos su etiqueta */
+.espesores input[type="radio"] {
+  display: none;
+}
+
+.espesores label {
+  width: 66px;
+  padding: 5px 0;
+  border: 1px solid #c9c9c9;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* Cuando el radio está marcado, su label se pinta */
+.espesores input[type="radio"]:checked + label {
+  background-color: #e6dcf5;
+  border-color: #a48fd6;
+}
+
+/* ---------- Inputs Largo y Alto ---------- */
+.campo {
+  width: 240px;
+  height: 36px;
+  border: 1px solid #c9c9c9;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.campo:focus {
+  outline: none;
+  border-color: #a48fd6;
+}
+
+/* ---------- Botón calcular ---------- */
+.btn-calcular {
+  width: 240px;
+  height: 46px;
+  margin-top: 30px;
+  background-color: #e6dcf5;
+  border: 1px solid #a48fd6;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-calcular:hover {
+  background-color: #d9cbf0;
+}
+
+#resultado {
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 600;
+}

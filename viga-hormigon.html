@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcular viga de hormigón</title>
+<link rel="stylesheet" href="muro.css">
+</head>
+<body>
+
+  <div class="pagina">
+
+    <h1>Calcular viga de hormigón</h1>
+
+    <div class="grupo">
+      <label class="titulo" for="largo">Largo</label>
+      <input class="campo" type="number" id="largo" min="0" step="any">
+    </div>
+
+    <div class="grupo">
+      <label class="titulo" for="alto">Alto</label>
+      <input class="campo" type="number" id="alto" min="0" step="any">
+    </div>
+
+    <button class="btn-calcular" onclick="calcular()">✓ Calcular</button>
+
+    <p id="resultado"></p>
+
+  </div>
+
+  <script>
+    function calcular() {
+      const largo = parseFloat(document.getElementById("largo").value);
+      const alto = parseFloat(document.getElementById("alto").value);
+      const resultado = document.getElementById("resultado");
+
+      if (isNaN(largo) || isNaN(alto)) {
+        resultado.textContent = "Ingresa largo y alto.";
+        return;
+      }
+
+      // Por ahora solo calcula el área. Aquí pones tu fórmula de la viga.
+      const area = largo * alto;
+      resultado.textContent = "Área: " + area.toFixed(2) + " m²";
+    }
+  </script>
+
+</body>
+</html>

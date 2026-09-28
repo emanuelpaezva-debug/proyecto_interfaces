@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcular muro de ladrillo</title>
+<link rel="stylesheet" href="muro.css">
+</head>
+<body>
+
+  <div class="pagina">
+
+    <h1>Calcular muro de ladrillo</h1>
+
+    <!-- Espesor: radios (solo se puede elegir uno) -->
+    <div class="grupo">
+      <label class="titulo">Espesor del muro</label>
+      <div class="espesores">
+        <input type="radio" name="espesor" id="e30" value="30" checked>
+        <label for="e30">30cm</label>
+
+        <input type="radio" name="espesor" id="e20" value="20">
+        <label for="e20">20cm</label>
+      </div>
+    </div>
+
+    <div class="grupo">
+      <label class="titulo" for="largo">Largo</label>
+      <input class="campo" type="number" id="largo" min="0" step="any">
+    </div>
+
+    <div class="grupo">
+      <label class="titulo" for="alto">Alto</label>
+      <input class="campo" type="number" id="alto" min="0" step="any">
+    </div>
+
+    <button class="btn-calcular" onclick="calcular()">✓ Calcular</button>
+
+    <p id="resultado"></p>
+
+  </div>
+
+  <script>
+    function calcular() {
+      const espesor = document.querySelector('input[name="espesor"]:checked').value;
+      const largo = parseFloat(document.getElementById("largo").value);
+      const alto = parseFloat(document.getElementById("alto").value);
+      const resultado = document.getElementById("resultado");
+
+      if (isNaN(largo) || isNaN(alto)) {
+        resultado.textContent = "Ingresa largo y alto.";
+        return;
+      }
+
+      // Por ahora solo calcula el área. Aquí pones tu fórmula de ladrillos.
+      const area = largo * alto;
+      resultado.textContent = "Área: " + area.toFixed(2) + " m² (espesor " + espesor + " cm)";
+    }
+  </script>
+
+</body>
+</html>

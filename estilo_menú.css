@@ -1,0 +1,122 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+   background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+
+.card {
+  background-color: #9c9c9c;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ece9fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar svg {
+  width: 22px;
+  height: 22px;
+  fill: #7c6ce0;
+}
+
+.user-text h1 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.user-text p {
+  font-size: 12px;
+  color: #9a9a9a;
+  margin-top: 2px;
+}
+
+.btn-salir {
+  border: 1px solid #d9d9d9;
+  background: transparent;
+  color: #4a4a4a;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-salir:hover {
+  background-color: #f0f0f0;
+}
+
+
+.pregunta {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+    background-color: #9c9c9c;
+}
+
+.opcion {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  background-color: #f7941d;
+  color: #333333;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.opcion:hover {
+  background-color: #f7f6fd;
+  border-color: #c9c1f5;
+}
+
+
+.opcion.salir-sistema {
+  color: #b3413e;
+}
+
+.opcion.salir-sistema:hover {
+  background-color: #fbeceb;
+  border-color: #eebfbd;
+}

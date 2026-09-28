@@ -1,0 +1,102 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #9c9c9c;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 400px;
+  min-height: 100vh;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif; 
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+
+.icono-usuario {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 50px;
+}
+
+.icono-usuario img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain; 
+}
+
+.grupo-input {
+  margin-bottom: 16px;
+}
+
+
+.caja-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+
+.caja-input .icono {
+  color: #e6e6e6;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.caja-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #e6e6e6;
+  font-size: 13px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.caja-input input::placeholder {
+  color: #e6e6e6;
+  text-transform: uppercase;
+}
+
+.btn-iniciar {
+  margin-top: 20px;
+  background-color: #f7941d;
+  border: none;
+  border-radius: 6px;
+  padding: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-iniciar span {
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.olvidaste {
+  margin-top: 16px;
+  text-align: center;
+  color: #e6e6e6;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear tu cuenta</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>CREAR TU CUENTA</h1>
+
+        <img src="img/Constructor.png"
+             alt="Trabajador de construcción"
+             class="imagen-trabajador">
+
+        <div class="campo">
+            <span class="icono">♙</span>
+            <input type="text" placeholder="NOMBRE">
+        </div>
+
+        <div class="campo">
+            <span class="icono">♙</span>
+            <input type="email" placeholder="INGRESE EMAIL">
+        </div>
+
+        <div class="campo">
+            <span class="icono">♙</span>
+            <input type="password" placeholder="CONTRASEÑA">
+        </div>
+
+        <label class="terminos">
+            Acepta terminos y condiciones?
+            <input type="checkbox">
+        </label>
+
+        <button type="button">
+            REGISTRARSE
+        </button>
+
+    </div>
+
+    <script>
+        const boton = document.querySelector("button");
+
+        boton.addEventListener("click", function () {
+            window.location.href = "inicio de sesion.html";
+        });
+    </script>
+
+</body>
+
+</html>

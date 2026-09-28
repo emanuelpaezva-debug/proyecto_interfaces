@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #9c9c9c;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 400px;
+  min-height: 100vh;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.titulo {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.resultado {
+  margin-top: 60px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+
+.dato:last-child {
+  border-bottom: none;
+}
+
+.dato-nombre {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e6e6e6;
+  margin-bottom: 8px;
+}
+
+.dato-valor {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
