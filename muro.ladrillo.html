@@ -12,7 +12,6 @@
 
     <h1>Calcular muro de ladrillo</h1>
 
-    <!-- Espesor: radios (solo se puede elegir uno) -->
     <div class="grupo">
       <label class="titulo">Espesor del muro</label>
       <div class="espesores">
@@ -52,7 +51,7 @@
         return;
       }
 
-      // Por ahora solo calcula el área. Aquí pones tu fórmula de ladrillos.
+    
       const area = largo * alto;
       resultado.textContent = "Área: " + area.toFixed(2) + " m² (espesor " + espesor + " cm)";
     }
