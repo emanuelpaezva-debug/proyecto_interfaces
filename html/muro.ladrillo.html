@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calcular muro de ladrillo</title>
-<link rel="stylesheet" href="muro.css">
+<link rel="stylesheet" href="../css/muro.css">
 </head>
 <body>
 
@@ -12,6 +12,7 @@
 
     <h1>Calcular muro de ladrillo</h1>
 
+    <form data-calculator="muro">
     <div class="grupo">
       <label class="titulo">Espesor del muro</label>
       <div class="espesores">
@@ -25,21 +26,19 @@
 
     <div class="grupo">
       <label class="titulo" for="largo">Largo</label>
-      <input class="campo" type="number" id="largo" min="0" step="any">
+      <input class="campo" type="number" id="largo" min="0" step="any" required>
     </div>
 
     <div class="grupo">
       <label class="titulo" for="alto">Alto</label>
-      <input class="campo" type="number" id="alto" min="0" step="any">
+      <input class="campo" type="number" id="alto" min="0" step="any" required>
     </div>
 
-    <button class="btn-calcular" onclick="calcular()">✓ Calcular</button>
-
-    <p id="resultado"></p>
+    <button class="btn-calcular" type="submit">✓ Calcular</button>
+    </form>
 
   </div>
 
-
-
+  <script src="../js/aplicacion.js"></script>
 </body>
 </html>

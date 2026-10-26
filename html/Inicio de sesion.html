@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Iniciar Sesión</title>
-<link rel="stylesheet" href="inicio de sesion.css">
+<link rel="stylesheet" href="../css/inicio de sesion.css">
 </head>
 <body>
 
@@ -14,37 +14,33 @@
   
   
     <div class="icono-usuario">
-      <img src="img/Constructor.png" alt="Trabajador de construcción">
+      <img src="../img/user.webp" alt="Trabajador de construcción">
     </div>
 
+    <form data-form="login">
     <div class="grupo-input">
       <div class="caja-input">
         <span class="icono">&#128100;</span>
-        <input type="text" placeholder="Usuario">
+        <input type="text" name="usuario" placeholder="Usuario" required>
       </div>
     </div>
 
     <div class="grupo-input">
       <div class="caja-input">
         <span class="icono">&#128274;</span>
-        <input type="password" placeholder="Contraseña">
+        <input type="password" name="contrasena" placeholder="Contraseña" required>
       </div>
     </div>
 
-    <button class="btn-iniciar">
+    <button class="btn-iniciar" type="submit">
       <span>INICIAR SESIÓN</span>
-          <script>
-        const boton = document.querySelector("button");
-
-        boton.addEventListener("click", function () {
-            window.location.href = "menu-calculadora.html";
-        });
-    </script>
     </button>
+    </form>
 
-    <a href="Recuperar contraseña.html">¿Olvidaste tu contraseña?</a> 
+    <a class="olvidaste" href="Recuperar contraseña.html">¿Olvidaste tu contraseña?</a>
 
   </div>
 
+  <script src="../js/aplicacion.js"></script>
 </body>
 </html>

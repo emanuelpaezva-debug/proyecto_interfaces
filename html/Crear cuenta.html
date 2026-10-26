@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear tu cuenta</title>
 
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
@@ -15,43 +15,39 @@
 
         <h1>CREAR TU CUENTA</h1>
 
-        <img src="img/Constructor.png"
+        <img src="../img/user.webp"
              alt="Trabajador de construcción"
              class="imagen-trabajador">
 
+        <form data-form="registro">
         <div class="campo">
             <span class="icono">♙</span>
-            <input type="text" placeholder="NOMBRE">
+            <input type="text" name="nombre" placeholder="NOMBRE" required>
         </div>
 
         <div class="campo">
             <span class="icono">♙</span>
-            <input type="email" placeholder="INGRESE EMAIL">
+            <input type="email" name="email" placeholder="INGRESE EMAIL" required>
         </div>
 
         <div class="campo">
             <span class="icono">♙</span>
-            <input type="password" placeholder="CONTRASEÑA">
+            <input type="password" name="contrasena" placeholder="CONTRASEÑA" minlength="6" required>
         </div>
 
         <label class="terminos">
             Acepta terminos y condiciones?
-            <input type="checkbox">
+            <input type="checkbox" name="terminos" required>
         </label>
 
-        <button type="button">
+        <button type="submit">
             REGISTRARSE
         </button>
+        </form>
 
     </div>
 
-    <script>
-        const boton = document.querySelector("button");
-
-        boton.addEventListener("click", function () {
-            window.location.href = "inicio de sesion.html";
-        });
-    </script>
+    <script src="../js/aplicacion.js"></script>
 
 </body>
 

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calcular viga de hormigón</title>
-<link rel="stylesheet" href="muro.css">
+<link rel="stylesheet" href="../css/muro.css">
 </head>
 <body>
 
@@ -12,22 +12,24 @@
 
     <h1>Calcular viga de hormigón</h1>
 
+    <form data-calculator="area">
     <div class="grupo">
       <label class="titulo" for="largo">Largo</label>
-      <input class="campo" type="number" id="largo" min="0" step="any">
+      <input class="campo" type="number" id="largo" min="0" step="any" required>
     </div>
 
     <div class="grupo">
       <label class="titulo" for="alto">Alto</label>
-      <input class="campo" type="number" id="alto" min="0" step="any">
+      <input class="campo" type="number" id="alto" min="0" step="any" required>
     </div>
 
-    <button  Calcular >
+    <button class="btn-calcular" type="submit">✓ Calcular</button>
+    </form>
 
     <p id="resultado"></p>
 
   </div>
 
-
+  <script src="../js/aplicacion.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Recuperar Contraseña</title>
-<link rel="stylesheet" href="Rep contraseña.css">
+<link rel="stylesheet" href="../css/Rep Contraseña.css">
 </head>
 <body>
 
@@ -14,19 +14,22 @@
       ¿Olvidaste la contraseña? No te preocupes? Es posible recuperarla.
     </p>
 
+    <form data-form="recuperar">
     <div class="grupo-email">
       <label class="etiqueta" for="email">EMAIL</label>
       <div class="caja-input">
         <span class="icono">&#128100;</span>
-        <input type="email" id="email" placeholder="Ingrese el email">
+        <input type="email" id="email" name="email" placeholder="Ingrese el email" required>
       </div>
     </div>
 
-    <button class="btn-recuperar">
+    <button class="btn-recuperar" type="submit">
       <span>RECUPERAR CONTRASEÑA</span>
     </button>
+    </form>
 
   </div>
 
+  <script src="../js/aplicacion.js"></script>
 </body>
 </html>
